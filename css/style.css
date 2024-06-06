@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,8 +28,6 @@ h2 {
   font-size: 30px;
   animation: doimau 0.5s infinite;
   text-shadow: 3px 5px 5px #e8e087;
-  ;
-
 }
 
 @keyframes doimau {
@@ -54,7 +57,26 @@ img {
   border: 3px dashed #eee472;
   text-align: center;
   border-radius: 0px 0px 20px 20px;
-  position: realtive;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 60px;
+}
+
+.container.sticky{
+  background: #dcbcbc;
+  opacity: 0.6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  height: 40px;
+}
+
+.container.sticky li a{
+  color: #3a45e1;
+  transition: all 0.4s ease;
+}
+.container.sticky li a:hover{
+ color: #dc2020;
 }
 
 .container li a{
@@ -138,6 +160,17 @@ nav ul li a{
   width:200px;
 }
 
+#gallery{
+  background-color: aquamarine;
+  border-radius: 10px;
+  text-align: center;
+  /* display:inline-block; */
+  
+}
+#gallery .column{
+  width: 14%;
+}
+
 
 #gallerys img{
   height: 100px;
@@ -146,13 +179,7 @@ nav ul li a{
   justify-self: center;
 }
 
-#gallery{
-  background-color: aquamarine;
-  border-radius: 10px;
-  text-align: center;
-  /* display:inline-block; */
-  
-}
+
 
 div.column {
   margin: 5px;
@@ -200,6 +227,15 @@ div.column img {
   border-radius: 10px;
   text-align: center;
   display: inline-block;
+  width: 97%;
+}
+
+#projects .column{
+  width: 14%;
+}
+
+#projects .column h4{
+  margin-bottom: 20px;
 }
 
 /*****css of FOOTER *****/
